@@ -9,7 +9,3 @@ function myFunction() {
     alert(rezultat.toFixed(2));
 
 }
-
-function myFunction2() {
-    alert(rezultat.toFixed(2));
-}
