@@ -7,11 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
     <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    <button onclick="myFunction()">Apasati aici pentru rezultat</button>
+    <header class="main-header">
+        <h1>Indice de masa corporala</h1>
+    </header>
+    <main class="main-content">
+        <div class="topdiv">
+            <label for="greutate">Greutate(kg):</label>
+            <input name="greutate" type="number" id="greutate">
 
+            <label for="inaltime">Inaltime(cm):</label>
+            <input name="inaltime" type="number" id="inaltime">
+        </div>
+        <div class="bottomdiv">
+            <button class="el-buton" onclick="rezultat()">Apasa aici pentru rezultat</button>
+            <div id="afisaj" class="rezultat"> </div>
+        </div>
+    </main>
 </body>
 
 </html>

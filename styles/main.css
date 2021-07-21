@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-image: url('https://picsum.photos/1920/1080');
+}
+
+.main-header {
+    background-color: rgba(207, 207, 207, 0.541);
+    color: rgb(0, 40, 150);
+}
+
+.main-header h1 {
+    margin: 0 auto;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.el-buton {
+    font-size: 20px;
+}
+
+.rezultat {
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 500;
+    width: 120px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(219, 219, 219, 0.692);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.topdiv {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.topdiv input {
+    font-size: 20px;
+    max-width: 300px;
+    border: 3px solid black;
+    background-color: rgba(207, 207, 207, 0.89);
+}
+
+.topdiv label:hover {
+    cursor: pointer;
+}
+
+.topdiv label {
+    background-color: rgba(207, 207, 207, 0.89);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.main-content {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.bottomdiv {
+    margin-top: 25px;
+}
+
+.el-buton {
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(207, 207, 207, 0.89);
+    color: rgb(0, 0, 0);
+}
