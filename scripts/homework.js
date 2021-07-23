@@ -44,7 +44,9 @@ for (let i = 0; i < 3; i++) {
     calculateBmi()
 } */
 
-/* First one */
+/* HOMEWORK */
+
+/*First one*/
 let result = '';
 for (let i = 1; i < 51; i++) {
 
@@ -65,7 +67,7 @@ for (let i = 1; i < 51; i++) {
 
 console.log(result2);
 
-/* Third one */
+/*Second one v2*/
 
 let result3 = '';
 for (let i = 0; i < 50; i++) {
@@ -77,7 +79,7 @@ for (let i = 0; i < 50; i++) {
 
 console.log(result3);
 
-/* Fourth one */
+/* Third one */
 function addition(first, last) {
     let sum = 0;
     if (first < last) {
@@ -93,7 +95,7 @@ function addition(first, last) {
 }
 console.log(addition(6, 5));
 
-/* Fourth one v2*/
+/*Third one v2*/
 let sum2 = 0;
 
 function addition2(first, last) {
@@ -113,7 +115,7 @@ function addition2(first, last) {
 addition2(6, 5);
 console.log(sum2);
 
-/*Fifth one*/
+/*Fourth one*/
 
 function maximum(a, b, c) {
     if (a > b && a > c) {
@@ -130,7 +132,7 @@ function maximum(a, b, c) {
 }
 
 maximum(4, 3, 3);
-/*Fifth one v2*/
+/*Fourth one v2*/
 
 function maximum2(a, b, c) {
     if (a >= b) {
@@ -152,7 +154,7 @@ function maximum2(a, b, c) {
 
 maximum2(4, 3, 3);
 
-/*Sixth one*/
+/*Fifth one*/
 function fizzBuzz(num) {
     let result = 0;
     for (let i = 1; i <= num; i++) {
@@ -173,7 +175,7 @@ function fizzBuzz(num) {
 
 console.log(fizzBuzz(61));
 
-/*Sixth one v2*/
+/*Fifth one v2*/
 function fizzBuzz2(num) {
     let result = '';
     for (let i = 1; i <= num; i++) {
@@ -195,7 +197,7 @@ function fizzBuzz2(num) {
 
 console.log(fizzBuzz2(61));
 
-/*Seventh one*/
+/*The Challenge*/
 
 function theBox(w, h) {
     let box = '';
@@ -222,7 +224,8 @@ function theBox(w, h) {
 
 console.log(theBox(4, 4));
 
-/*Seventh one v2*/
+/*The Challenge v2*/
+
 function theBox2(w, h) {
     let box = '';
     for (let i = 0; i < w; i++) {
@@ -239,21 +242,3 @@ function theBox2(w, h) {
 }
 
 console.log(theBox2(4, 4));
-
-
-/* let result = '';
-let i = 1;
-while (i < 21) {
-    result += `${i} `;
-    i++;
-}
- 
-console.log(result);*/
-
-/* let result = '';
-let i = 1;
-
-do {
-    result += `${i} `
-
-} */
