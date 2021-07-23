@@ -9,8 +9,8 @@ function rezultat() {
         alert("Va rugam sa introduceti greutatea");
         return;
     }
-    if (greutate >= 321 || greutate <= 29) {
-        alert("Va rugam sa introduceti greutatea intre 30 si 320");
+    if (greutate >= 321 || greutate <= 9) {
+        alert("Va rugam sa introduceti greutatea intre 10 si 320");
         return;
     }
     const inaltime = parseInt(document.getElementById("inaltime").value);
