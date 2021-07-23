@@ -26,3 +26,48 @@ function rezultat() {
     document.getElementById('afisaj').innerHTML = rezultat.toFixed(2);
 
 }
+
+
+/* function isNotValidParameter(param) {
+    if (Number.isNaN(param) || param === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function calculateBmi() {
+    const weight = Number(prompt('Ce greutate ai (in kg)?'));
+
+    if (isNotValidParameter(weight)) {
+        alert('Va rugam introduceti o greutate corecta!');
+    } else {
+        const height = Number(prompt('Ce inaltime ai (in metri)?'));
+
+        if (isNotValidParameter(height)) {
+            alert('Va rugam introduceti o inaltime corecta!');
+        } else {
+            const result = weight / height ** 2; //Math.pow(inaltime, 2);
+            let label = 'Obese';
+            let color = '#c00';
+
+            if (result < 18.5) {
+                label = 'Underweight';
+                color = 'cyan';
+            } else if (result < 25) {
+                label = 'Normal';
+                color = '#bada55';
+            } else if (result < 30) {
+                label = 'Overweight';
+                color = 'yellow';
+            }
+
+            console.log('%c' + label, 'color: ' + color, result.toFixed(2));
+            //console.log(`%c${label}`, `color: ${color}`, result.toFixed(2));
+
+        }
+    }
+}
+for (let i = 0; i < 3; i++) {
+    calculateBmi()
+} */
