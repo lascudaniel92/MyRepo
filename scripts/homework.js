@@ -50,27 +50,25 @@ function addition(first, last) {
     }
     return sum;
 }
-console.log(addition(6, 5));
+console.log(addition(6, 6));
 
 /*Third one v2*/
 let sum2 = 0;
 
 function addition2(first, last) {
-    let range = 0;
+    let range = 1;
     let average = 0;
 
     if (first > last) {
         range = first - last;
-    }
-    if (last > first) {
+    } else if (last > first) {
         range = last - first;
     }
-    range = range + 1;
     average = (first + last) / 2;
     sum2 = range * average;
-}
-addition2(6, 5);
-console.log(sum2);
+    return sum2;
+};
+console.log(addition2(11, 9));
 
 /*Fourth one*/
 
@@ -88,7 +86,7 @@ function maximum(a, b, c) {
     }
 }
 
-maximum(4, 3, 3);
+maximum(5, 5, 5);
 /*Fourth one v2*/
 
 function maximum2(a, b, c) {
@@ -109,7 +107,7 @@ function maximum2(a, b, c) {
     }
 }
 
-maximum2(4, 3, 3);
+maximum2(5, 5, 5);
 
 /*Fifth one*/
 function fizzBuzz(num) {
