@@ -1,0 +1,52 @@
+body {
+  background: none;
+  max-width: 1000px;
+  min-width: 715px;
+}
+main {
+  font-size: 50px;
+}
+
+.thebuttons {
+  background-color: #efefef;
+  border: 1px solid #767676;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.thebuttons:hover {
+  transform: scale(1.2);
+  transition: 150ms;
+}
+
+.topside {
+  display: flex;
+  justify-content: center;
+}
+
+.scoreboard {
+  margin-top: 20px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.scoreboard div {
+  margin-right: 50px;
+}
+
+.result-score {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.result-selection {
+  opacity: 0.5;
+  margin-top: 20px;
+}
+
+.result-selection.winner {
+  opacity: 1;
+}
