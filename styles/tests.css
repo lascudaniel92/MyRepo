@@ -1,0 +1,18 @@
+main {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.generate {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.theresults {
+  display: grid;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+
+.theresults2 {
+}
