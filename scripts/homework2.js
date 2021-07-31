@@ -25,10 +25,10 @@ function rockpaperscissors() {
             output = `It's a draw!`;
             break;
           case 1:
-            output = `You lost!`;
+            output = `Sorry, the computer won! Paper beats rock!`;
             break;
           case 2:
-            output = `You win! Congrats!`;
+            output = `Congrats, you won! Rock beats scissors!`;
             break;
         }
         break;
@@ -38,10 +38,10 @@ function rockpaperscissors() {
             output = `It's a draw!`;
             break;
           case 2:
-            output = `You lost!`;
+            output = `Sorry, the computer won! Scissors beats paper!`;
             break;
           case 0:
-            output = `You win! Congrats!`;
+            output = `Congrats, you won! Paper beats rock!`;
             break;
         }
         break;
@@ -51,21 +51,21 @@ function rockpaperscissors() {
             output = `It's a draw!`;
             break;
           case 0:
-            output = `You lost!`;
+            output = `Sorry, the computer won! Rock beats scissors!`;
             break;
           case 1:
-            output = `You win! Congrats!`;
+            output = `Congrats, you won! Scissors beats paper!`;
             break;
         }
         break;
     }
     outputElement.innerText = output;
 
-    if (output === `You win! Congrats!`) {
+    if (output.includes(`Congrats, you won!`)) {
       userWin++;
       userWinner.innerText = userWin;
     }
-    if (output === `You lost!`) {
+    if (output.includes(`Sorry, the computer won!`)) {
       computerWin++;
       computerWinner.innerText = computerWin;
     }
