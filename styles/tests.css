@@ -9,10 +9,14 @@ main {
 }
 
 .theresults {
+  margin: 0 auto;
+  max-width: 1000px;
   display: grid;
-  gap: 1rem;
-  font-size: 1.8rem;
+  flex-direction: column;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .theresults2 {
+  font-size: 25px;
+  margin: 4px;
 }

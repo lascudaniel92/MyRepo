@@ -20,7 +20,7 @@ function generateUnique(array, max) {
 
 const dataresult = document.querySelector('[data-result]');
 
-const generate = document.querySelector('[data-generated]');
+const generate = document.querySelector('[data-generator]');
 generate.addEventListener('click', () => {
   numbersGenerator(6, 49);
 });
