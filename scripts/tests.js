@@ -1,12 +1,42 @@
 'use strict';
 
+let leaderboard = [];
+let sortedLeaderboard;
+const MAX = 49;
+const COUNT = 6;
+for (let i = 0; i < MAX + 1; i++) {
+  let obj = {};
+  obj[i] = 0;
+  leaderboard.push(obj);
+}
+
+function compare(a, b) {
+  if (a[Object.keys(a)[0]] > b[Object.keys(b)[0]]) {
+    return -1;
+  }
+  if (a[Object.keys(a)[0]] < b[Object.keys(b)[0]]) {
+    return 1;
+  }
+  return 0;
+}
+
 function numbersGenerator(count, max) {
   let result = [];
   for (let i = 0; i < count; i++) {
     result = generateUnique(result, max);
   }
   result.sort((a, b) => a - b);
-  dataresult.innerHTML += '<div class="theresults2">' + result + '</div>';
+  sortedLeaderboard = JSON.parse(JSON.stringify(leaderboard));
+  sortedLeaderboard.sort(compare);
+  dataresult.innerHTML += '<div class="theresults2">' + result.join(', ') + '</div>';
+  topresults.innerHTML = '';
+  for (let i = 0; i < 16; i++) {
+    let number = Object.keys(sortedLeaderboard[i])[0];
+    let weight = Object.values(sortedLeaderboard[i])[0];
+    if (weight !== 0) {
+      topresults.innerHTML += '<div class="topresults2">' + number + ` appeared ` + weight + ` times` + '</div>';
+    }
+  }
 }
 
 function generateUnique(array, max) {
@@ -15,6 +45,7 @@ function generateUnique(array, max) {
     rng = Math.floor(Math.random() * max + 1);
   }
   array.push(rng);
+  leaderboard[rng][rng]++;
   return array;
 }
 
@@ -22,5 +53,7 @@ const dataresult = document.querySelector('[data-result]');
 
 const generate = document.querySelector('[data-generator]');
 generate.addEventListener('click', () => {
-  numbersGenerator(6, 49);
+  numbersGenerator(COUNT, MAX);
 });
+
+const topresults = document.querySelector('[data-topresults]');
