@@ -2,7 +2,7 @@
 
 let leaderboard = [];
 let sortedLeaderboard;
-const MAX = 49;
+const MAX = 51;
 const COUNT = 6;
 for (let i = 0; i < MAX + 1; i++) {
   let obj = {};
@@ -30,7 +30,7 @@ function numbersGenerator(count, max) {
   sortedLeaderboard.sort(compare);
   dataresult.innerHTML += '<div class="theresults2">' + result.join(', ') + '</div>';
   topresults.innerHTML = '';
-  for (let i = 0; i < 16; i++) {
+  for (let i = 0; i < 51; i++) {
     let number = Object.keys(sortedLeaderboard[i])[0];
     let weight = Object.values(sortedLeaderboard[i])[0];
     if (weight !== 0) {
