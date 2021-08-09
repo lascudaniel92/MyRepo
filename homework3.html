@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework3</title>
+
+    <link rel="stylesheet" href="styles/homework3.css" />
+    <script src="scripts/homework3.js" defer></script>
+  </head>
+  <body>
+      <section class="comments-list" data-comments-list>
+
+      </section>
+    <form action="" class="comments-form" data-comments-form>
+        <div class="left-side">
+            <div class="firstName">
+                <input type="text" id="fName" name="First Name" placeholder="First Name" autocomplete="off"/>
+            </div>
+            <div class="lastName">
+                <input type="text" id="lName" name="Last Name" placeholder="Last Name" autocomplete="off"/>
+            </div>
+            <div class="gender-area">
+            <p>Gender</p>
+            <div class="radio-inputs">
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <label for="gender">M</label></div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="gender">F</label>
+                </div>
+            </div>
+            </div>
+            <textarea
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Your message here...."
+            cols="50"
+            rows="10"
+            ></textarea>
+            <button type="submit" class="btn comments-button" >Submit</button>
+        </div>
+        <div class="right-side">
+           
+        </div>
+    </form>
+    
+  </body>
+</html>

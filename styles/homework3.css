@@ -1,0 +1,175 @@
+:root {
+  --primary-hue: 270;
+
+  --primary-color: hsl(var(--primary-hue), 50%, 50%);
+
+  --primary-background-text: #fff;
+  --text-color: #333;
+  --border-radius: 3px;
+  --primary-color-darker: hsl(var(var(--primary-hue), 50%, 40%));
+
+  --site-width: 960px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.comments-form label {
+  justify-self: center;
+  /* text-align: right; */
+}
+
+.comments-form {
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: var(--site-width);
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+}
+
+.comments-button {
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.btn {
+  background: var(--primary-color);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary-color-darker);
+  padding: 1rem;
+  color: var(--primary-background-text);
+}
+
+.comments-list {
+  list-style: none;
+  width: var(--site-width);
+  margin: 0 auto 2rem;
+}
+
+.comments-list article {
+  border-radius: var(--border-radius);
+  display: flex;
+  background-color: #def0d9;
+  color: #308c46;
+  font-size: 2rem;
+  font-weight: 600;
+  align-items: center;
+  height: 60px;
+}
+
+.deleteElement {
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.comments-list article img {
+  margin: 15px;
+}
+
+.comment-avatar {
+  height: 30px;
+  width: 30px;
+  margin: 1px;
+  padding: 1px;
+}
+
+.comment-message {
+  grid-area: message;
+  margin-top: 0;
+}
+
+input::placeholder {
+  color: #cbcbcb;
+}
+textarea::placeholder {
+  color: #1b1d1b;
+}
+
+.left-side {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 500px;
+  margin-left: 50px;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.firstName {
+  width: 100%;
+}
+.firstName input {
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: var(--border-radius);
+  padding: 5px;
+}
+.lastName {
+  width: 100%;
+}
+.lastName input {
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: var(--border-radius);
+  padding: 5px;
+}
+
+.right-side {
+  background-image: url('../images/validation-mark.png');
+  background-color: #ccc;
+  background-size: 100% 100%;
+  width: 330px;
+  margin-top: 15px;
+}
+
+#fName {
+  margin-bottom: 15px;
+}
+
+.gender-area {
+  display: flex;
+}
+
+.radio-inputs {
+  margin: 40px 0px 10px 15px;
+}
+
+.left-side textarea {
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: var(--border-radius);
+  padding: 5px;
+}
+
+.redborder {
+  border-radius: var(--border-radius) !important;
+  border: 2px solid red !important;
+}
+
+.redborder:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 1px red !important;
+}
