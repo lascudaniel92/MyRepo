@@ -8,6 +8,10 @@
   --border-radius: 3px;
   --primary-color-darker: hsl(var(var(--primary-hue), 50%, 40%));
 
+  --color-default: grey;
+  --color-invalid: red;
+  --color-valid: green;
+
   --site-width: 960px;
 }
 
@@ -172,4 +176,15 @@ textarea::placeholder {
 .redborder:focus {
   outline: none !important;
   box-shadow: 0 0 0 1px red !important;
+}
+
+#notify.error {
+  background-color: red;
+}
+
+input:invalid {
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 0, 0, 0.75);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.75);
 }
