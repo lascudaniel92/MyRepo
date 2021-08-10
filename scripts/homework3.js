@@ -6,16 +6,6 @@
 
   const commentList = document.querySelector('[data-comments-list]');
 
-  /* const input = document.getElementById('fName');
-  const input2 = document.getElementById('lName');
-  input.oninvalid = function (event) {
-    event.target.setCustomValidity('asd1');
-  };
-
-  input2.oninvalid = function (event) {
-    event.target.setCustomValidity('asd2');
-  }; */
-
   function validateForm(e) {
     const fName = e.target.elements.fName.value;
     const lName = e.target.elements.lName.value;
