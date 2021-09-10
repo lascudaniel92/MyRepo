@@ -1,0 +1,202 @@
+:root {
+  font-size: 10px;
+}
+
+body {
+  margin: 0 auto;
+  width: 900px;
+  font-size: 1.5rem;
+  background-color: black;
+  text-align: center;
+}
+.mainform {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+form div {
+  width: 900px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(116, 116, 116);
+}
+form div label {
+  width: 150px;
+  margin: 5px;
+}
+
+form div input {
+  width: 745px;
+  margin: 10px;
+  height: 25px;
+  font-size: 2.3rem;
+}
+
+.editdetails {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 2.5rem;
+}
+
+.editdetails input {
+  font-size: 2rem;
+}
+
+.editdetails p {
+  color: white;
+  margin: 2px;
+  text-align: start;
+}
+.Ratings {
+  width: 898px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+
+  margin-top: 5px;
+  text-align: center;
+  align-items: center;
+
+  color: white;
+  cursor: pointer;
+}
+.Ratings label {
+  width: 90px;
+}
+
+.Ratings p {
+  margin: 0px;
+}
+
+.Ratings input {
+  width: 260px;
+}
+.spanplus {
+  margin-right: 2rem;
+  font-size: 4.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.spanminus {
+  margin-right: 2rem;
+  font-size: 4.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -9px;
+}
+.ratings2 {
+  width: 897px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.ratings2 p {
+  margin: 0px;
+}
+
+.ratings2 input {
+  width: 260px;
+}
+
+.newrating {
+  width: 897px;
+  display: flex;
+  flex-direction: column;
+}
+
+.labelspans {
+  display: flex;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.editdeletebuttons {
+  margin-bottom: 1rem;
+}
+
+.submitchanges {
+  cursor: pointer;
+  font-size: 3.5rem;
+  margin: 3rem 0rem;
+  border: 0.7rem solid rgba(46, 46, 46, 0.795);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(129, 129, 129, 0.726);
+}
+.modalbox {
+  width: 50rem;
+  height: 20rem;
+  background-color: #fff;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  font-size: 3rem;
+  margin: 0 auto;
+  margin-top: 20rem;
+  animation-duration: 1s;
+}
+.modalheader {
+  position: relative;
+}
+.spanx {
+  position: absolute;
+  top: -1.8rem;
+  right: -24rem;
+  cursor: pointer;
+}
+
+.deleteitem {
+  font-size: 2rem;
+  margin-right: 5rem;
+  background-color: red;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+}
+
+.canceldelete {
+  font-size: 2rem;
+  margin-left: 5rem;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+}
+
+.modalbuttons {
+  display: flex;
+}
+
+.thelastone {
+  display: flex;
+  flex-direction: column;
+}
+.rawinput {
+  border: 0.7rem solid rgba(104, 75, 20, 0.795);
+}
+.addrawdata {
+  margin-top: 2rem;
+  cursor: pointer;
+  font-size: 3.5rem;
+  border: 0.7rem solid rgba(104, 75, 20, 0.795);
+}
+
+.pv2 {
+  color: white;
+  font-size: 2.5rem;
+}

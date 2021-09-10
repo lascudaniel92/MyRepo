@@ -1,0 +1,208 @@
+:root {
+  font-size: 10px;
+}
+
+body {
+  margin: 0 auto;
+  width: 900px;
+  font-size: 1.5rem;
+  background-color: black;
+  text-align: center;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.themovies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.themovies2 {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ratingtar {
+  background-image: url('ratingstar.png');
+}
+
+.ratingdiv {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.ratingdiv img {
+  height: 25px;
+  margin-left: 5px;
+}
+
+.mainarticle {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222222;
+  color: white;
+  font-size: 1.75rem;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.mainarticle p {
+  margin: 1rem;
+  text-align: center;
+}
+
+.mainarticle a img {
+  max-width: 25rem;
+}
+
+.mainarticle img {
+  max-width: 25rem;
+}
+.titledetail {
+  font-size: 2rem;
+  height: 5rem;
+}
+.titledetail2 {
+  font-size: 4rem;
+}
+
+.ratingbox {
+  list-style: none;
+  padding-inline-start: 0px;
+  text-align: center;
+}
+
+.thebuttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px;
+}
+.prevbutton {
+  margin: 30px 10px 0px 10px;
+  padding: 5px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  outline: none;
+
+  font-size: 1.75rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+}
+
+.nextbutton {
+  margin: 30px 10px 0px 10px;
+  padding: 5px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  outline: none;
+
+  font-size: 1.75rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+}
+
+.onegenre {
+  border-radius: 3rem;
+  border: 3px solid rgb(92, 92, 92);
+  font-size: 2rem;
+  padding: 10px;
+}
+.genre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.nonhidden {
+  display: block;
+}
+h1 {
+  width: 150px;
+  margin-top: 29px;
+}
+header {
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+header form {
+  text-decoration: none;
+  margin-top: 5px;
+  margin-right: 5px;
+
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+header form div {
+  margin: 3px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  width: 400px;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.thebuttonsv2 {
+  margin: 5px 70px 5px 0px;
+}
+
+.editdeletebuttons {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.editbutton {
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 3rem;
+  background-color: #222222;
+  color: white;
+  padding: 20px;
+  border: 5px solid rgb(151, 151, 151);
+}
+
+.deletebutton {
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 3rem;
+  background-color: #222222;
+  color: white;
+  padding: 20px;
+  border: 5px solid rgb(151, 151, 151);
+}
+
+.signoutbutton {
+  cursor: pointer;
+  font-size: 15px;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+}
+.createmovie {
+  cursor: pointer;
+  font-size: 15px;
+  position: absolute;
+  left: 100px;
+  top: 1px;
+}

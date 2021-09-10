@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="moviesAPI.js" defer></script>
+    <script src="movieDetails.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="editmovie.css">
+    
+    <title>Movie Details</title>
+</head>
+<body>
+    <div class="themovies2" movie-details></div>
+    <div data-editdeletebuttons class="editdeletebuttons">
+        <div editbutton class="editbutton">Edit/Add Movie</div>
+        <div deletebutton id ="deletebutton" class="deletebutton">Delete Movie</div>
+    </div>
+    <form editdetails class="editdetails mainform hidden" id="editdetails">
+        <p>Title:</p>
+        <input type="text" name="Title"/>
+        <p>Poster:</p>
+        <input type="text" name="Poster"/>
+        <p>Year:</p>
+        <input type="text" name="Year"/>
+        <p>Genre:</p>
+        <input type="text" name="Genre"/>
+        <p>Imdb ID:</p>
+        <input type="text" name="imdbID"/>
+        <div class="Ratings">
+            <label for="Ratings">Ratings</label>
+            <span data-spanplus class="spanplus">+</span>
+            <span data-spanminus class="spanminus">-</span>
+            <div newrating class="newrating"></div> 
+        </div>
+        <p>Actors:</p>
+        <input type="text" name="Actors"/>
+        <p>Awards:</p>
+        <input type="text" name="Awards"/>
+        <p>Country:</p>
+        <input type="text" name="Country"/>
+        <p>Director:</p>
+        <input type="text" name="Director"/>
+        <p>Language:</p>
+        <input type="text" name="Language"/>
+        <p>Metascore:</p>
+        <input type="text" name="Metascore"/>
+        <p>Plot:</p>
+        <input type="text" name="Plot"/>
+        <p>Rated:</p>
+        <input type="text" name="Rated"/>
+        <p>Released:</p>
+        <input type="text" name="Released"/>
+        <p>Response:</p>
+        <input type="text" name="Response"/>
+        <p>Runtime:</p>
+        <input type="text" name="Runtime"/>
+        <p>Type:</p>
+        <input type="text" name="Type"/>
+        <p>Writer:</p>
+        <input type="text" name="Writer"/>
+        <p>Imdb Rating:</p>
+        <input type="text" name="imdbRating"/>
+        <p>Imdb Votes:</p>
+        <input type="text" name="imdbVotes"/>
+        <p>Total Seasons:</p>
+        <input type="text" name="totalSeasons"/>
+        <input type="text" name="_id" class="hidden"/>
+        <button submitchanges class="submitchanges" type="submit" form="editdetails" value="Submit">Submit Changes</button>
+        
+        
+      </form>
+        <div class="thelastone">
+            <p class="pv2">If you want to add all the details from OMDB please feel free to use this Text Area as well instead of the Edit/Add Button</p>
+            <textarea name="rawinput" class="rawinput" id="rawinput" cols="30" rows="10"></textarea>
+            <button addrawdata id="addrawdata" class="addrawdata" >Submit details from OMDB</button>
+        </div>
+      <div class="modal hidden" id="modal">
+          <div id="modalbox" class="modalbox">
+          <div class="modalheader">
+              <span id="spanx" class="spanx">X</span>
+          </div>
+          <div class="modalcontent">Do you want to delete the movie?</div>
+          <div class="modalbuttons"> 
+              <button id="deleteitem" class="deleteitem">Delete it</button>
+              <button id="canceldelete" class="canceldelete">No</button>
+          </div>
+        </div>
+
+      </div>
+</body>
+</html>
