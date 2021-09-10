@@ -1,10 +1,10 @@
 'use strict';
 
 (function () {
-  const commentForm = document.querySelector('[data-comments-form]');
+  const commentForm = document.querySelector('[comments-form]');
   commentForm.addEventListener('submit', handleSubmit);
 
-  const commentList = document.querySelector('[data-comments-list]');
+  const commentList = document.querySelector('[comments-list]');
 
   function validateForm(e) {
     const fName = e.target.elements.fName.value;
@@ -36,7 +36,7 @@
     return formValid;
   }
   function deleteDiv() {
-    const commentList = document.querySelector('[data-comments-list]');
+    const commentList = document.querySelector('[comments-list]');
     commentList.innerHTML = '';
   }
   function handleSubmit(e) {
