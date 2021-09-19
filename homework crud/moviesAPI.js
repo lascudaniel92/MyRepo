@@ -9,8 +9,8 @@ class Movies {
     return fetch(url).then(this.handleResponse);
   }
 
-  getAllIds() {
-    const url = 'https://movies-app-siit.herokuapp.com/movies?take=1500';
+  getAllMovies2() {
+    const url = 'https://movies-app-siit.herokuapp.com/movies?take=10000';
     return fetch(url).then(this.handleResponse);
   }
 
@@ -26,6 +26,18 @@ class Movies {
     return fetch(`${this.endpoint}/${id}`).then(this.handleResponse);
   }
 
+  async addMovie(movie, json = true) {
+    const accessToken = localStorage.getItem('accessToken');
+    return await fetch(`${this.endpoint}`, {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+        'X-Auth-Token': accessToken,
+      },
+      body: json ? JSON.stringify(movie) : movie,
+    }).then(this.handleResponse);
+  }
+
   async editMovie(movie) {
     const movieid = movie._id;
     delete movie._id;
@@ -38,18 +50,6 @@ class Movies {
       },
       body: JSON.stringify(movie),
     }).then((res) => res.json());
-  }
-
-  async addMovie(movie, json = true) {
-    const accessToken = localStorage.getItem('accessToken');
-    return await fetch('https://movies-app-siit.herokuapp.com/movies', {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-        'X-Auth-Token': accessToken,
-      },
-      body: json ? JSON.stringify(movie) : movie,
-    }).then(this.handleResponse);
   }
 
   async deleteMovie(movieid) {

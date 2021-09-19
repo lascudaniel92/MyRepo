@@ -14,8 +14,9 @@
 <body>
     <div class="themovies2" movie-details></div>
     <div data-editdeletebuttons class="editdeletebuttons">
-        <div editbutton class="editbutton">Edit/Add Movie</div>
-        <div deletebutton id ="deletebutton" class="deletebutton">Delete Movie</div>
+        <div editbutton class="editbutton" id="editbutton">Edit Movie</div>
+        <div addbutton class="addbutton" id="addbutton">Add Movie</div>
+        <div deletebutton class="deletebutton" id ="deletebutton">Delete Movie</div>
     </div>
     <form editdetails class="editdetails mainform hidden" id="editdetails">
         <p>Title:</p>
@@ -73,6 +74,7 @@
       </form>
         <div class="thelastone">
             <p class="pv2">If you want to add all the details from OMDB please feel free to use this Text Area as well instead of the Edit/Add Button</p>
+            <p class="pv3">Excuse my laziness of not hidding this textarea but I find it easier to add new movies like this instead of clicking Edit/Add Movie even though by clicking it you can add movie as well. You get an error if you try to add a movie without being logged anyways.</p>
             <textarea name="rawinput" class="rawinput" id="rawinput" cols="30" rows="10"></textarea>
             <button addrawdata id="addrawdata" class="addrawdata" >Submit details from OMDB</button>
         </div>

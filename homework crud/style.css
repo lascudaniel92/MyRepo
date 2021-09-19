@@ -174,8 +174,19 @@ header a {
 }
 .editbutton {
   margin-top: 15px;
+  margin-right: 15px;
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  background-color: #222222;
+  color: white;
+  padding: 20px;
+  border: 5px solid rgb(151, 151, 151);
+}
+
+.addbutton {
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 2.5rem;
   background-color: #222222;
   color: white;
   padding: 20px;
@@ -184,8 +195,9 @@ header a {
 
 .deletebutton {
   margin-top: 15px;
+  margin-left: 15px;
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 2.5rem;
   background-color: #222222;
   color: white;
   padding: 20px;
