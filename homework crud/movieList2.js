@@ -8,9 +8,9 @@ async function getMovies2() {
   const fragment = document.createDocumentFragment();
 
   for (const movie of movies.results) {
-    if (movie.Title.toLowerCase().includes('batman')) {
-      continue;
-    }
+    // if (movie.Title.toLowerCase().includes('batman')) {
+    //   continue;
+    // }
     const article = document.createElement('article');
     const title = document.createElement('p');
     const iconLink = document.createElement('a');

@@ -19,6 +19,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .themovies2 {
