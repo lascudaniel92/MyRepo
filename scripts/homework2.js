@@ -88,4 +88,4 @@ function rockpaperscissors() {
     runGame(2);
   });
 }
-/* rockpaperscissors(); */
+rockpaperscissors();
