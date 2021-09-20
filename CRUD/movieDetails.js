@@ -232,7 +232,7 @@ const modal = document.getElementById('modal');
 buttondelete.addEventListener('click', async function () {
   modal.setAttribute('class', 'hidden');
   await api.deleteMovie(movieId);
-  location.assign('movieList.html');
+  location.assign('index.html');
 });
 buttoncancel.onclick = async function () {
   modal.setAttribute('class', 'hidden');

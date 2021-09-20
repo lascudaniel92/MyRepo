@@ -58,7 +58,7 @@ let skip = 0;
 
     if (data.accessToken) {
       localStorage.setItem('accessToken', data.accessToken);
-      location.assign('movieList.html');
+      location.assign('index.html');
     } else {
       console.warn(data.message);
     }
@@ -80,7 +80,7 @@ if (localStorage.accessToken) {
 
 function signOut() {
   window.localStorage.removeItem('accessToken');
-  location.assign('movieList.html');
+  location.assign('index.html');
 }
 
 function nextPage() {
