@@ -2,6 +2,7 @@
 
 let leaderboard = [];
 let sortedLeaderboard;
+const topresults = document.querySelector('[data-topresults]');
 const MAX = 49;
 const COUNT = 6;
 for (let i = 0; i < MAX + 1; i++) {
@@ -31,13 +32,15 @@ function numbersGenerator(count, max) {
   sortedLeaderboard.sort(compare);
   dataresult.innerHTML += '<div class="theresults2">' + result.join(', ') + '</div>';
   topresults.innerHTML = '';
-  for (let i = 0; i < 48; i++) {
+  for (let i = 0; i < 25; i++) {
     let number = Object.keys(sortedLeaderboard[i])[0];
     let weight = Object.values(sortedLeaderboard[i])[0];
     if (weight !== 0) {
       topresults.innerHTML += '<div class="topresults2">' + number + ` appeared ` + weight + ` times` + '</div>';
     }
   }
+
+  topresults.classList.remove('hidden');
 }
 
 function generateUnique(array, max) {
@@ -56,5 +59,3 @@ const generate = document.querySelector('[data-generator]');
 generate.addEventListener('click', () => {
   numbersGenerator(COUNT, MAX);
 });
-
-const topresults = document.querySelector('[data-topresults]');

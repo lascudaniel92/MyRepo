@@ -26,8 +26,8 @@ main {
 
 .topresults {
   position: absolute;
-  top: 1%;
-  left: 1%;
+  top: 1px;
+  left: 1px;
 }
 .topresults2 {
   display: flex;
@@ -38,4 +38,8 @@ main {
   border: 1px solid black;
   color: cornflowerblue;
   padding: 3px;
+}
+
+.hidden {
+  display: none !important;
 }
