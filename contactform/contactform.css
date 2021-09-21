@@ -142,7 +142,7 @@ textarea::placeholder {
 }
 
 .right-side {
-  background-image: url('../images/validation-mark.png');
+  background-image: url('/validation-mark.png');
   background-color: #ccc;
   background-size: 100% 100%;
   width: 330px;

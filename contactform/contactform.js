@@ -69,7 +69,7 @@
     commentEl.appendChild(avatarEl);
     commentEl.append(' Thank you for contacting us, ' + fName.value);
     commentEl.appendChild(deleteEl);
-    setTimeout(deleteDiv, 7000);
+    setTimeout(deleteDiv, 5000);
 
     commentList.innerHTML = '';
 
