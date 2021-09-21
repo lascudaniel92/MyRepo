@@ -7,26 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI</title>
     <script src="bmi.js"></script>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="bmi.css">
 </head>
 
 <body>
+    <div class="content">
     <header class="main-header">
         <h1>Indice de masa corporala</h1>
     </header>
     <main class="main-content">
         <div class="topdiv">
             <label for="greutate">Greutate(kg):</label>
-            <input name="greutate" type="number" id="greutate">
+            <input name="greutate" type="number" id="greutate" autocomplete="off">
 
             <label for="inaltime">Inaltime(cm):</label>
-            <input name="inaltime" type="number" id="inaltime">
+            <input name="inaltime" type="number" id="inaltime" autocomplete="off">
         </div>
         <div class="bottomdiv">
             <button class="el-buton" onclick="rezultat()">Apasa aici pentru rezultat</button>
             <div id="afisaj" class="rezultat"> </div>
         </div>
     </main>
+</div>
 </body>
 
 </html>

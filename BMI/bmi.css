@@ -1,0 +1,48 @@
+body {
+  font-size: 10px;
+  margin: 0 auto;
+  width: 900px;
+}
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.main-header h1 {
+  margin: 0.1rem;
+}
+
+.topdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topdiv label {
+  margin: 1rem;
+}
+.topdiv input {
+  font-size: 1.2rem;
+}
+.bottomdiv {
+  text-align: center;
+}
+
+#afisaj {
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.el-buton {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
