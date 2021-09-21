@@ -25,6 +25,7 @@ function numbersGenerator(count, max) {
   for (let i = 0; i < count; i++) {
     result = generateUnique(result, max);
   }
+
   result.sort((a, b) => a - b);
   sortedLeaderboard = JSON.parse(JSON.stringify(leaderboard));
   sortedLeaderboard.sort(compare);
