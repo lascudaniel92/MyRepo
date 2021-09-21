@@ -2,7 +2,7 @@
 
 let leaderboard = [];
 let sortedLeaderboard;
-const MAX = 51;
+const MAX = 49;
 const COUNT = 6;
 for (let i = 0; i < MAX + 1; i++) {
   let obj = {};
