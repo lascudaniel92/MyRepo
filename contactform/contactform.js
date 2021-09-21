@@ -60,7 +60,7 @@
     const avatarEl = document.createElement('img');
     const deleteEl = document.createElement('span');
 
-    avatarEl.setAttribute('src', 'images/validation-mark.png');
+    avatarEl.setAttribute('src', 'validation-mark.png');
     avatarEl.alt = `Image`;
     avatarEl.className = 'comment-avatar';
     deleteEl.classList.add('deleteElement');
