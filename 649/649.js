@@ -31,7 +31,7 @@ function numbersGenerator(count, max) {
   sortedLeaderboard.sort(compare);
   dataresult.innerHTML += '<div class="theresults2">' + result.join(', ') + '</div>';
   topresults.innerHTML = '';
-  for (let i = 0; i < 49; i++) {
+  for (let i = 0; i < 48; i++) {
     let number = Object.keys(sortedLeaderboard[i])[0];
     let weight = Object.values(sortedLeaderboard[i])[0];
     if (weight !== 0) {
