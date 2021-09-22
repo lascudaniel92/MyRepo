@@ -72,6 +72,6 @@ main {
 }
 
 .grid-container--fit {
-  grid-template-columns: repeat(auto-fit, minmax(13rem, 13rem));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
   margin-top: 2px;
 }
