@@ -2,9 +2,11 @@ body {
   background: none;
   max-width: 1000px;
   min-width: 715px;
+  margin: 0 auto;
 }
 main {
   font-size: 50px;
+  text-align: center;
 }
 
 .thebuttons {
