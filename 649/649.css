@@ -32,7 +32,7 @@ main {
   border: 2px solid rgba(26, 0, 170, 0.904);
   float: left;
   position: absolute;
-  top: 2.3rem;
+  top: 2.35rem;
   border-radius: var(--border-radius);
 }
 .topresults2 {
@@ -59,7 +59,7 @@ main {
 }
 
 .grid-container {
-  margin-left: 5.4rem;
+  margin-left: 4.2rem;
 
   display: grid;
   float: right;
