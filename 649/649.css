@@ -14,7 +14,7 @@ main {
 }
 
 .generate {
-  font-size: 25px;
+  font-size: 21px;
   cursor: pointer;
   background-color: rgb(209, 209, 209);
   color: rgba(189, 17, 17, 0.89);
@@ -35,7 +35,7 @@ main {
   min-width: 90px;
 }
 .topresults2 {
-  font-size: 16px;
+  font-size: 13px;
   border: 2px solid rgba(26, 0, 170, 0.904);
   color: rgba(26, 0, 170, 0.904);
   border-radius: var(--border-radius);
@@ -68,7 +68,7 @@ main {
   border: 2px solid rgba(14, 99, 14, 0.753);
   margin: 1px;
   border-radius: var(--border-radius);
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .grid-container--fit {
