@@ -46,9 +46,9 @@ main {
 .topresults2 {
   border: 2px solid rgba(26, 0, 170, 0.904);
   color: rgba(26, 0, 170, 0.904);
-  padding: 0.3rem;
+  padding: 0.1rem;
   border-radius: var(--border-radius);
-  margin: 0.2rem;
+  margin: 0.3rem;
   text-align: center;
   background-color: rgb(209, 209, 209);
 }
