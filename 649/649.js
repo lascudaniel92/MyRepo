@@ -30,7 +30,7 @@ function numbersGenerator(count, max) {
   result.sort((a, b) => a - b);
   sortedLeaderboard = JSON.parse(JSON.stringify(leaderboard));
   sortedLeaderboard.sort(compare);
-  dataresult.innerHTML += '<div class="theresults2">' + result.join(', ') + '</div>';
+  dataresult.innerHTML += '<div class="theresults2 grid-element">' + result.join(', ') + '</div>';
   topresults.innerHTML = '';
   for (let i = 0; i < 25; i++) {
     let number = Object.keys(sortedLeaderboard[i])[0];
