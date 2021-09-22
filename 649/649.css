@@ -37,7 +37,7 @@ main {
 .topresults {
   border: 2px solid rgba(26, 0, 170, 0.904);
   text-align: center;
-  width: 5rem;
+  max-width: 5.1rem;
   float: left;
   position: absolute;
   top: 2.3rem;
@@ -46,7 +46,7 @@ main {
 .topresults2 {
   border: 2px solid rgba(26, 0, 170, 0.904);
   color: rgba(26, 0, 170, 0.904);
-  padding: 0rem;
+  padding: 0.3rem;
   border-radius: var(--border-radius);
   margin: 0.2rem;
   text-align: center;
