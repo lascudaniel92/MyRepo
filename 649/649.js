@@ -3,6 +3,7 @@
 let leaderboard = [];
 let sortedLeaderboard;
 const topresults = document.querySelector('[data-topresults]');
+const topresults2 = document.querySelector('[datax]');
 const MAX = 49;
 const COUNT = 6;
 for (let i = 0; i < MAX + 1; i++) {
@@ -30,7 +31,7 @@ function numbersGenerator(count, max) {
   result.sort((a, b) => a - b);
   sortedLeaderboard = JSON.parse(JSON.stringify(leaderboard));
   sortedLeaderboard.sort(compare);
-  dataresult.innerHTML += '<div class="theresults2 grid-element">' + result.join(', ') + '</div>';
+  dataresult.innerHTML += '<div class="grid-element">' + result.join(', ') + '</div>';
   topresults.innerHTML = '';
   for (let i = 0; i < 25; i++) {
     let number = Object.keys(sortedLeaderboard[i])[0];
@@ -41,6 +42,7 @@ function numbersGenerator(count, max) {
   }
 
   topresults.classList.remove('hidden');
+  topresults2.classList.remove('hidden');
 }
 
 function generateUnique(array, max) {

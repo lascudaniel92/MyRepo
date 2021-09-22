@@ -1,47 +1,56 @@
+:root {
+  --font-size: 10px;
+  --primary-hue: 270;
+
+  --primary-color: hsl(var(--primary-hue), 50%, 50%);
+  --primary-background-text: #fff;
+  --text-color: #333;
+
+  --primary-color-darker: hsl(var(--primary-hue), 50%, 40%);
+
+  --border-radius: 3px;
+}
+
 body {
-  font-size: 10px;
+  margin: 0 auto;
+  text-align: center;
+
   margin: 0.1rem;
 }
 main {
-  margin: 0 auto;
-  text-align: center;
+  font-size: 1rem;
   display: flex;
-
   flex-direction: column;
 }
 
 .generate {
   font-size: 1.2rem;
   cursor: pointer;
-
-  color: rgba(150, 136, 18, 0.562);
+  background-color: rgb(209, 209, 209);
+  color: rgba(189, 17, 17, 0.89);
   width: 15rem;
   height: 2rem;
-}
-
-/* .theresults {
-  min-width: 20rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-} */
-
-.theresults2 {
-  font-size: 1.2rem;
-  margin: 4px;
-  color: rgba(23, 110, 89, 0.562);
+  border: 2px solid rgba(189, 17, 17, 0.89);
+  border-radius: var(--border-radius);
 }
 
 .topresults {
-  max-width: 4.1rem;
+  border: 2px solid rgba(26, 0, 170, 0.904);
+  text-align: center;
+  max-width: 5rem;
   float: left;
   position: absolute;
   top: 2.3rem;
+  border-radius: var(--border-radius);
 }
 .topresults2 {
-  border: 1px solid black;
-  color: cornflowerblue;
-  padding: 3px;
+  border: 2px solid rgba(26, 0, 170, 0.904);
+  color: rgba(26, 0, 170, 0.904);
+  padding: 0.1rem;
+  border-radius: var(--border-radius);
+  margin: 0.2rem;
+  text-align: center;
+  background-color: rgb(209, 209, 209);
 }
 
 .hidden {
@@ -58,17 +67,20 @@ main {
 }
 
 .grid-container {
-  margin-left: 5rem;
+  margin-left: 5.4rem;
 
   display: grid;
   float: right;
 }
 
 .grid-element {
-  background-color: rgb(128, 128, 128);
-  padding: 0.5rem;
-  color: #fff;
-  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(209, 209, 209);
+  padding: 0.3rem;
+  color: rgba(14, 99, 14, 0.753);
+  border: 2px solid rgba(14, 99, 14, 0.753);
+  margin: 0.15rem;
+  border-radius: var(--border-radius);
+  font-size: 1.1rem;
 }
 
 .grid-container--fit {
