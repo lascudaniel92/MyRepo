@@ -1,10 +1,13 @@
+body {
+  font-size: 10px;
+}
 main {
   margin: 0 auto;
   text-align: center;
 }
 
 .generate {
-  font-size: 2rem;
+  font-size: 1.2rem;
   cursor: pointer;
   margin-bottom: 10px;
   color: rgba(150, 136, 18, 0.562);
@@ -19,7 +22,7 @@ main {
 }
 
 .theresults2 {
-  font-size: 25px;
+  font-size: 1.2rem;
   margin: 4px;
   color: rgba(23, 110, 89, 0.562);
 }
