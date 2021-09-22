@@ -37,7 +37,7 @@ function numbersGenerator(count, max) {
     let number = Object.keys(sortedLeaderboard[i])[0];
     let weight = Object.values(sortedLeaderboard[i])[0];
     if (weight !== 0) {
-      topresults.innerHTML += '<div class="topresults2">' + number + ` appeared  ` + weight + ` times` + '</div>';
+      topresults.innerHTML += '<div class="topresults2">' + number + ` appeared ` + weight + ` times` + '</div>';
     }
   }
 
