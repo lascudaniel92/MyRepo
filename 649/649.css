@@ -1,3 +1,7 @@
+:root {
+  --border-radius: 3px;
+}
+
 body {
   text-align: center;
   margin: 0 auto;
@@ -18,12 +22,17 @@ main {
   border-radius: var(--border-radius);
 }
 
+.theresults {
+}
+
 .topresults {
   font-size: 16px;
   border: 2px solid rgba(26, 0, 170, 0.904);
-  position: absolute;
-  margin-top: 39px;
+  float: left;
   border-radius: var(--border-radius);
+  max-width: 20%;
+  margin: 2px;
+  min-width: 90px;
 }
 .topresults2 {
   font-size: 16px;
@@ -49,7 +58,6 @@ main {
 }
 
 .grid-container {
-  margin-left: 164px;
   display: grid;
 }
 
@@ -58,7 +66,7 @@ main {
   padding: 2px;
   color: rgba(14, 99, 14, 0.753);
   border: 2px solid rgba(14, 99, 14, 0.753);
-  margin: 2px;
+  margin: 1px;
   border-radius: var(--border-radius);
   font-size: 16px;
 }
