@@ -5,28 +5,25 @@
 body {
   text-align: center;
   margin: 0 auto;
-  margin: 0.1rem;
 }
 main {
-  font-size: 1rem;
   display: flex;
   flex-direction: column;
 }
 
 .generate {
+  margin: 2px;
   font-size: 21px;
   cursor: pointer;
   background-color: rgb(209, 209, 209);
   color: rgba(189, 17, 17, 0.89);
   border: 2px solid rgba(189, 17, 17, 0.89);
   border-radius: var(--border-radius);
-}
-
-.theresults {
+  min-width: 300px;
 }
 
 .topresults {
-  font-size: 16px;
+  font-size: 14px;
   border: 2px solid rgba(26, 0, 170, 0.904);
   float: left;
   border-radius: var(--border-radius);
@@ -35,7 +32,7 @@ main {
   min-width: 90px;
 }
 .topresults2 {
-  font-size: 13px;
+  font-size: 14px;
   border: 2px solid rgba(26, 0, 170, 0.904);
   color: rgba(26, 0, 170, 0.904);
   border-radius: var(--border-radius);
