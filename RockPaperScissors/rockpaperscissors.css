@@ -1,7 +1,7 @@
 body {
   background: none;
   max-width: 700px;
-  min-width: 518px;
+  min-width: 505px;
   margin: 0 auto;
 }
 main {
@@ -12,9 +12,9 @@ main {
 .thebuttons {
   background-color: #efefef;
   border: 1px solid #767676;
-  padding: 10px 20px;
+  padding: 10px 25px;
   cursor: pointer;
-  margin: 15px;
+  margin: 8px;
 }
 
 .thebuttons:hover {
