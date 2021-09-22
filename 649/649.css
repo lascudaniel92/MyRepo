@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   margin: 0 auto;
   font-size: 10px;
@@ -17,6 +18,7 @@ main {
 }
 
 .generate {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.2rem;
   cursor: pointer;
   background-color: rgb(209, 209, 209);
