@@ -37,7 +37,7 @@ main {
 .topresults {
   border: 2px solid rgba(26, 0, 170, 0.904);
   text-align: center;
-  max-width: 5rem;
+  width: 5rem;
   float: left;
   position: absolute;
   top: 2.3rem;
@@ -46,7 +46,7 @@ main {
 .topresults2 {
   border: 2px solid rgba(26, 0, 170, 0.904);
   color: rgba(26, 0, 170, 0.904);
-  padding: 0.1rem;
+  padding: 0rem;
   border-radius: var(--border-radius);
   margin: 0.2rem;
   text-align: center;
@@ -85,4 +85,5 @@ main {
 
 .grid-container--fit {
   grid-template-columns: repeat(auto-fit, minmax(13rem, 13rem));
+  margin-top: 0.1rem;
 }
