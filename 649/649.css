@@ -62,7 +62,7 @@ main {
 
 .grid-element {
   background-color: rgb(209, 209, 209);
-  padding: 0.3rem;
+  padding: 2px;
   color: rgba(14, 99, 14, 0.753);
   border: 2px solid rgba(14, 99, 14, 0.753);
   margin: 2px;
