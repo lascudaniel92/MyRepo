@@ -1,20 +1,20 @@
 body {
   background: none;
-  max-width: 700px;
-  min-width: 470px;
+  max-width: 600px;
+  min-width: 440px;
   margin: 0 auto;
 }
 main {
-  font-size: 25px;
+  font-size: 18px;
   text-align: center;
 }
 
 .thebuttons {
   background-color: #efefef;
   border: 1px solid #767676;
-  padding: 10px 25px;
+  padding: 10px 30px;
   cursor: pointer;
-  margin: 8px;
+  margin: 10px;
 }
 
 .thebuttons:hover {
@@ -24,7 +24,7 @@ main {
 
 .topside {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .scoreboard {
@@ -36,7 +36,7 @@ main {
   align-items: center;
 }
 .scoreboard div {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .result-score {
