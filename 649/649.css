@@ -30,7 +30,7 @@ main {
   float: left;
   border-radius: var(--border-radius);
   margin: 2px;
-  width: 70px;
+  width: 66px;
 }
 .topresults2 {
   font-size: 11px;
