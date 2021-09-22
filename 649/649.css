@@ -19,7 +19,7 @@ main {
   cursor: pointer;
   background-color: rgb(209, 209, 209);
   color: rgba(189, 17, 17, 0.89);
-  width: 19rem;
+  width: 200px;
   border: 2px solid rgba(189, 17, 17, 0.89);
   border-radius: var(--border-radius);
 }
