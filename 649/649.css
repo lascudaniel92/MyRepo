@@ -33,7 +33,7 @@ main {
   width: 70px;
 }
 .topresults2 {
-  font-size: 10px;
+  font-size: 11px;
   border: 2px solid rgba(26, 0, 170, 0.904);
   color: rgba(26, 0, 170, 0.904);
   border-radius: var(--border-radius);
