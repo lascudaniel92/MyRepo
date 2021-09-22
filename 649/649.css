@@ -1,20 +1,13 @@
 :root {
   --font-size: 10px;
-  --primary-hue: 270;
-
-  --primary-color: hsl(var(--primary-hue), 50%, 50%);
-  --primary-background-text: #fff;
-  --text-color: #333;
-
-  --primary-color-darker: hsl(var(--primary-hue), 50%, 40%);
 
   --border-radius: 3px;
 }
 
 body {
-  margin: 0 auto;
   text-align: center;
-
+  margin: 0 auto;
+  font-size: 10px;
   margin: 0.1rem;
 }
 main {
